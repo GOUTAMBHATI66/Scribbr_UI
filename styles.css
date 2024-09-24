@@ -1,0 +1,297 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #001c2f;
+  color: white;
+  display: none;
+  z-index: 100;
+  padding: 0 35px;
+  width: 100%;
+}
+
+.header .link {
+  color: white;
+  text-decoration: none;
+}
+
+/* GIVING PADDING TO NAVBAR */
+.navbar {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: rgb(246, 252, 252);
+  transition: top 1s;
+}
+/* GIVING PADDING TO NAVBAR */
+
+/* STYLING NAV LINKS */
+.listItem {
+  color: black;
+  font-size: medium;
+  font-weight: 500;
+}
+/* STYLING NAV LINKS */
+
+/* STYLING NAV LINKS CONTAINER */
+.navLinksUL {
+  display: flex;
+  gap: 24px;
+}
+/* STYLING NAV LINKS CONTAINER */
+
+/* STYLING Upload BUTTON IN NAVBAR */
+.navUploadBtn {
+  background-color: #f06836;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  display: none;
+}
+
+.navUploadBtn:hover {
+  background-color: #dc3c03;
+}
+/* STYLING Upload BUTTON IN NAVBAR */
+
+/* STYLING INNER CONTAINER WHEN WE HOVER ON NEVLINK */
+.insideNavLink {
+  display: flex;
+  gap: 8px;
+  height: 80px;
+}
+
+.insideNavLink:hover {
+  background: rgba(244, 243, 243, 0.937);
+}
+
+.insideNavLink .text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 0;
+}
+
+.insideNavLink .text .upperText {
+  color: #212b58;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.insideNavLink .text .lowerText {
+  font-size: 8px;
+}
+/* STYLING INNER CONTAINER WHEN WE HOVER ON NEVLINK */
+
+/* STYLING INNER CONTAINER AND IT'S TEXT WHEN WE HOVER ON SECOND AND THIRD NEV LINK  */
+.innerNavLinkUL {
+  display: flex;
+}
+
+.innerNavLinkUL .sideBox {
+  background-color: #f0f0f0;
+  padding: 20px 15px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.innerNavLinkUL .sideBox .heading {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/* STYLING INNER CONTAINER AND IT'S TEXT WHEN WE HOVER ON SECOND AND THIRD NEV LINK  */
+
+/* STYLING FOR "OUR DREAM TEAM" SECTION */
+.section {
+  padding: 50px 25px;
+  width: 100%;
+}
+
+.secondSection .content {
+  padding: 60px;
+}
+
+.section .subtitle {
+  font-family: Oswald;
+  color: #f06836;
+}
+
+.section .title {
+  color: #1b2b68;
+}
+
+.section .description {
+  font-size: large;
+}
+
+/* STYLING FOR "OUR DREAM TEAM" SECTION */
+
+/* STYLING FOR "FEEDBACK" SECTION */
+
+.feedbackSection {
+  background-color: #dae8ef;
+  padding: 40px 30px;
+}
+
+.feedbackSection .reviwes {
+  padding: 20px;
+
+  gap: 4px;
+}
+
+.feedbackSection .reviwes .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedbackSection .scrollableBox .firstReview {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.feedbackSection .scrollableBox .firstReview .img {
+  width: 30%;
+}
+
+.feedbackSection .scrollableBox .firstReview .img2 {
+  width: 90%;
+}
+
+.feedbackSection .scrollableBox .firstReview .ReadMoreBtn {
+  border: none;
+  background-color: #f8f9fa;
+  color: #00b67a;
+}
+
+.feedbackSection .QNA {
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feedbackSection .QNA .heading {
+  color: #1b2b68;
+}
+
+.feedbackSection .QNA .para a {
+  text-decoration: none;
+  color: black;
+}
+
+.feedbackSection .QNA .para a:hover {
+  color: gray;
+}
+
+.feedbackSection .QNA .btn {
+  display: none;
+}
+
+/* Scrollable additional container below the left paragraph */
+.feedbackSection .reviwes .scrollableBox {
+  max-height: 350px; /* Set the max height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Custom scrollbar styling for additional container */
+.scrollableBox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollableBox::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 4px;
+}
+
+.scrollableBox::-webkit-scrollbar-track {
+  background-color: #e9ecef;
+}
+
+/* STYLING FOR "FEEDBACK" SECTION */
+
+/* Media queries */
+@media (min-width: 770px) {
+  .navbar {
+    padding: 10px 40px;
+  }
+
+  .section .description {
+    width: 70%;
+  }
+
+  .feedbackSection .reviwes {
+    width: 60%;
+  }
+
+  .feedbackSection .QNA {
+    width: 40%;
+  }
+
+  .feedbackSection {
+    padding: 40px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 990px) {
+  .navbar {
+    padding: 10px 70px;
+  }
+
+  .header {
+    padding: 8px 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .feedbackSection {
+    padding: 40px 70px;
+  }
+
+  .feedbackSection .QNA .btn {
+    display: block;
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navUploadBtn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .header {
+    padding: 8px 70px;
+  }
+
+  .feedbackSection {
+    padding: 40px 70px;
+  }
+}
