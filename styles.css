@@ -205,8 +205,8 @@
 
 /* Scrollable additional container below the left paragraph */
 .feedbackSection .reviwes .scrollableBox {
-  max-height: 350px; /* Set the max height for the scrollable container */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 350px;
+  overflow-y: auto;
   background-color: #e9ecef;
   border-radius: 4px;
   margin-top: 15px;
@@ -215,7 +215,7 @@
   gap: 16px;
 }
 
-/* Custom scrollbar styling for additional container */
+/* Custom scrollbar styling for scrollableBox */
 .scrollableBox::-webkit-scrollbar {
   width: 8px;
 }
@@ -231,7 +231,178 @@
 
 /* STYLING FOR "FEEDBACK" SECTION */
 
+/* STYLING FOR "OUR MISSION" SECTION  */
+
+.OurMission {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.OurMission .goal {
+  padding: 15px 30px;
+}
+
+.OurMission .description {
+  padding: 15px 30px;
+  font-size: larger;
+}
+
+.OurMission .description a {
+  text-decoration: none;
+}
+
+.OurMission .goal .subtitle {
+  font-family: Oswald;
+  color: #f06836;
+}
+
+.OurMission .goal .title {
+  color: #1b2b68;
+}
+
+/* STYLING FOR "OUR MISSION" SECTION  */
+
+/* STYLING FOR "QUESTION" SECTION  */
+.Question {
+  padding: 70px 15px;
+}
+
+.Question .title {
+  margin: 30px 0;
+  text-align: center;
+  color: #1b2b68;
+}
+
+.Question .heading {
+  color: #1b2b68;
+}
+
+.Question h4 {
+  display: flex;
+  justify-content: space-between;
+  color: #1b2b68;
+  margin-bottom: 40px;
+}
+
+.Question .container .leftSide {
+  margin-bottom: 30px;
+}
+
+.Question .container .list-group-item {
+  border: none;
+}
+
+.Question .container .listItem a {
+  display: flex;
+  align-items: center;
+}
+
+.Question .container .listItem a:hover {
+  color: #f06836;
+}
+
+.Question .container .accordion-button:hover {
+  color: #f06836;
+}
+/* STYLING FOR "QUESTION" SECTION  */
+
+/* STYLING FOR "FOOTER" SECTION */
+
+.footer {
+  background-color: #002135;
+  color: #fff;
+  padding: 40px 0 0;
+}
+
+.footer .upperFooter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .upperFooter img {
+  display: none;
+  width: 150px;
+  height: 150px;
+}
+
+.footer .upperFooter a {
+  font-size: large;
+  color: #c2c2c28e;
+  text-decoration: none;
+}
+
+.footer .upperFooter a:hover {
+  color: #f06836;
+}
+
+.footer .lowerFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer .lowerFooter #hide {
+  display: none;
+}
+
+.footer .payment-icons img {
+  height: 30px;
+}
+.footer .trustpilot {
+  color: #fff; /* Trustpilot green color */
+  font-weight: bolder;
+}
+
+.footer .payment {
+  background-color: #001b2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px; */
+}
+
+.footer .terms {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .terms a {
+  text-decoration: none;
+  color: #c2c2c28e;
+  font-size: larger;
+  text-align: center;
+}
+/* STYLING FOR "FOOTER" SECTION */
+
 /* Media queries */
+
+@media (min-width: 550px) {
+  .OurMission .goal {
+    padding: 15px 70px;
+  }
+
+  .OurMission .description {
+    padding: 15px 70px;
+  }
+
+  .footer .payment {
+    padding: 10px 60px;
+  }
+
+  .footer .lowerFooter #hide {
+    display: block;
+  }
+
+  .footer .payment-icons img {
+    height: 50px;
+  }
+}
+
 @media (min-width: 770px) {
   .navbar {
     padding: 10px 40px;
@@ -251,6 +422,10 @@
 
   .feedbackSection {
     padding: 40px;
+    flex-direction: row;
+  }
+
+  .OurMission {
     flex-direction: row;
   }
 }
@@ -275,6 +450,22 @@
   .feedbackSection .QNA .btn {
     display: block;
     color: white;
+  }
+
+  .footer .upperFooter img {
+    display: block;
+  }
+
+  .footer .payment {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 60px; */
+  }
+
+  .footer .terms {
+    flex-direction: row;
+    gap: 10px;
   }
 }
 
