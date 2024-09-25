@@ -59,6 +59,20 @@
   display: none;
 }
 
+.MeetBtn {
+  background-color: #f06836;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.MeetBtn:hover {
+  background-color: #dc3c03;
+}
+
 .navUploadBtn:hover {
   background-color: #dc3c03;
 }
@@ -363,7 +377,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /* padding: 10px; */
 }
 
 .footer .terms {
@@ -378,6 +391,152 @@
   text-align: center;
 }
 /* STYLING FOR "FOOTER" SECTION */
+
+/* STYLING FOR "HERO SECTION" */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-image {
+  display: none;
+}
+
+.content {
+  background-color: white;
+  padding: 35px;
+  border-radius: 4px;
+}
+
+.hero .content .BrandContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero .content .BrandContainer .Branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e8dcdce6;
+  padding-bottom: 10px;
+}
+
+.hero .content .BrandContainer .Branding .image {
+  width: 100px;
+}
+
+.hero .content .BrandContainer .Branding #first {
+  color: #16c6b3;
+}
+
+.hero .content .BrandContainer .Branding #second {
+  color: #1f80e8;
+}
+
+.hero .content .BrandContainer .Branding #third {
+  color: #be59be;
+}
+
+.hero .content .BrandContainer .Branding button {
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  color: #16c6b3;
+  border: none;
+}
+
+.hero .content .BrandContainer .Branding #Btn1 {
+  color: #16c6b3;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
+
+.hero .content .BrandContainer .Branding #Btn2 {
+  color: #1f80e8;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
+
+.hero .content .BrandContainer .Branding #Btn3 {
+  color: #be59be;
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
+
+.hero .content .BrandContainer .Branding #Btn1:hover {
+  border: 1px solid #16c6b3;
+  background-color: #f1eded;
+}
+
+.hero .content .BrandContainer .Branding #Btn2:hover {
+  border: 1px solid #1f80e8;
+  background-color: #f1eded;
+}
+
+.hero .content .BrandContainer .Branding #Btn3:hover {
+  border: 1px solid #be59be;
+  background-color: #f1eded;
+}
+
+/* STYLING FOR "HERO SECTION" */
+
+/* STYLING FOR "SCRIBBR SECTION" */
+
+.custom-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #15204f;
+}
+.main {
+  background-color: #f6f4f1;
+}
+.custom-section {
+  padding: 2rem;
+}
+
+.custom-section .custom-card {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.custom-section .custom-card:hover {
+  overflow: hidden;
+  border-radius: 4px;
+  transform: scale(1.06);
+}
+
+.custom-section .custom-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-section .custom-card ul li a {
+  text-decoration: none;
+  color: #1b324c;
+}
+
+.custom-section .custom-card ul li a:hover {
+  text-decoration: underline;
+}
+
+.bg-yellow {
+  background-color: #ffc107;
+}
+.bg-blue {
+  background-color: #343a40;
+  color: white;
+}
+
+.knowledge {
+  font-family: oswald;
+  color: #fc5216;
+}
+
+/* STYLING FOR "SCRIBBR SECTION" */
 
 /* Media queries */
 
@@ -400,6 +559,14 @@
 
   .footer .payment-icons img {
     height: 50px;
+  }
+
+  .full-image {
+    display: block;
+  }
+
+  .small-image {
+    display: none;
   }
 }
 
@@ -484,5 +651,19 @@
 
   .feedbackSection {
     padding: 40px 70px;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+    top: 25rem;
+    left: 8rem;
+  }
+
+  .hero .content .BrandContainer {
+    flex-direction: row;
   }
 }
